@@ -26,7 +26,7 @@ Payload:
 }
 ```
 Resposta:
-
+```
 {
   "id": "64429e987a8b646915b3735f",
   "products": [
@@ -48,6 +48,7 @@ Resposta:
   "createdAt": "2023-04-21T14:32:56.335943085",
   "transactionId": "1682087576536_99d2ca6c-f074-41a6-92e0-21700148b519"
 }
+```
 Endpoint para visualizar a saga: Voltar ao nível anterior
 
 É possível recuperar os dados da saga pelo orderId ou pelo transactionId, o resultado será o mesmo:
@@ -57,7 +58,7 @@ GET http://localhost:3000/api/event?orderId=64429e987a8b646915b3735f
 GET http://localhost:3000/api/event?transactionId=1682087576536_99d2ca6c-f074-41a6-92e0-21700148b519
 
 Resposta:
-
+```
 {
   "id": "64429e9a7a8b646915b37360",
   "transactionId": "1682087576536_99d2ca6c-f074-41a6-92e0-21700148b519",
@@ -121,3 +122,4 @@ Resposta:
   ],
   "createdAt": "2023-04-21T14:32:58.28"
 }
+```
